@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="quiz_app">
+    <head>
+        <title>
+        </title>
+        <script src="https://code.angularjs.org/1.6.2/angular.js"></script> 
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="quizShowController as qsc">
+        
+        <br>
+		<h1>Welcome to the Quiz Show</h1>
+        <br>
+        <p>
+		Click Question Me to Begin!
+            <button ng-click="qsc.start()">Question Me</button>
+        </p>
+		<p>
+            {{qsc.randomStudent.name}}
+        <br>
+		
+            {{qsc.randomQuestion.questionText}}
+        </p>
+		<p>
+            Answer: <input type = "text" ng-model="qsc.answerChoice"> <button ng-click="qsc.checkAnswer()">Check</button>
+        </p>
+        <p ng-show="qsc.showMessage">
+            {{qsc.message}}
+        </p>
+		<p>
+            <button ng-click="qsc.showStudents()">show students</button>
+        </p> 
+		<p>		   
+            <button ng-click="qsc.hideStudents()">hide students</button>
+        </p>
+            
+        <br>
+        <ul ng-if="qsc.students != null" ng-show="qsc.showstudents">
+            <li ng-repeat="student in qsc.students"
+                       id="student{{$index}}"
+                       >
+                {{student.name}}     
+                [<label for="remove">Delete Student</label>
+                <input type="checkbox" ng-click="qsc.removeStudent($index)">]
+            </li>
+        </ul>
+        <br>
+       
+    </body>
+</html>

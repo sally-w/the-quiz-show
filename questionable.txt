@@ -1,0 +1,34 @@
+{
+    "questions":[
+        {
+            "questionText": "What programming language does AngularJS use?",
+            "answerText": "JavaScript",
+            "correctlyGuessed": 0,
+            "asked": 0
+        },
+        {
+            "questionText": "What travels the world while remaining in the corner?",
+            "answerText": "A Stamp",
+            "correctlyGuessed": 0,
+            "asked": 0
+        },
+        {
+            "questionText": "Imagine you are in a dark room, who do you escape?",
+            "answerText": "Stop Imagining",
+            "correctlyGuessed": 0,
+            "asked": 0
+        },
+        {
+            "questionText": "What am I?",
+            "answerText": "A Question",
+            "correctlyGuessed": 0,
+            "asked": 0
+        },
+        {
+            "questionText": "What is broken every time it is spoken?",
+            "answerText": "Silence",
+            "correctlyGuessed": 0,
+            "asked": 0
+        }
+    ]
+}
