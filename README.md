@@ -1,18 +1,17 @@
+# Quiz Show App
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This app will choose random students to answer questions that are randomly read from a json file.
 
+### Code
 
-Hi there! Welcome to Cloud9 IDE!
+Getting the array to update was the most challenging part of this application this time.
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+```
+qsc.updateArray = function(){
+            for (var i in qsc.students){
+                if(qsc.students[i].name == qsc.randomStudent.name){
+                    qsc.students[i].numberOfQuestions
+                if(qsc.answerChoice == qsc.randomQuestion.answerText){
+                    qsc.students[i].numberCorrect++
+                    }
+```
